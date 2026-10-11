@@ -147,7 +147,10 @@ export class AuthService {
   async sendWelcomeEmail(email: string): Promise<void> {
     const frontendUrl = this.getRequiredConfig('FRONTEND_URL');
     const dashboardUrl = new URL('/dashboard', frontendUrl).toString();
-    const logoUrl = new URL('/assets/almond-kernel.png', frontendUrl).toString();
+    const logoUrl = new URL(
+      '/assets/almond-kernel.png',
+      frontendUrl,
+    ).toString();
 
     try {
       await this.mailService.send({

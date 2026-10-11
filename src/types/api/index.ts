@@ -3,3 +3,5 @@ export interface ApiResponse<T> {
   message: string;
   statusCode: number;
 }
+
+export type { PaginatedData, PaginationMetadata } from './pagination';

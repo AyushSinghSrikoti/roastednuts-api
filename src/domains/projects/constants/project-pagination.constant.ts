@@ -1,0 +1,2 @@
+export const PROJECTS_PAGE_SIZE = 10;
+export const PROJECT_SEARCH_MAX_LENGTH = 64;
